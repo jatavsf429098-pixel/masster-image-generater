@@ -1,0 +1,11 @@
+{
+  "name": "codee-project",
+  "version": "1.0.0",
+  "description": "Tiny demo project with HTML/CSS/JS",
+  "scripts": {
+    "start": "live-server --open=./index.html"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {}
+}
