@@ -1,18 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Codee Project</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Generator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main>
-    <h1>Welcome to Codee Project</h1>
-    <p>This is a tiny demo with HTML, CSS and JavaScript.</p>
-    <button id="btn">Click me</button>
-    <div id="output"></div>
-  </main>
-  <script src="script.js"></script>
+    <header>
+        <h1>AI Image Generator</h1>
+        <p>Unleash your creativity with the power of AI.</p>
+    </header>
+
+    <main>
+        <div class="input-container">
+            <input type="text" id="prompt-input" placeholder="Enter a descriptive prompt here..." aria-label="Enter a descriptive text prompt">
+            <button id="generate-btn">Generate Image</button>
+        </div>
+
+        <div id="image-display-section" class="image-display-section">
+            <div id="loading-spinner" class="loading-spinner" style="display: none;"></div>
+            <img id="generated-image" src="" alt="Generated image will appear here" style="display: none;">
+            <p id="placeholder-text">Your generated image will appear here.</p>
+        </div>
+    </main>
+
+    <footer>
+        <div class="ad-banner">
+            <a href="#" aria-label="Advertisement">
+                <img src="https://via.placeholder.com/728x90?text=Your+Ad+Goes+Here" alt="Ad Banner" class="ad-image">
+            </a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
